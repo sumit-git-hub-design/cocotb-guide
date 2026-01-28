@@ -8,9 +8,9 @@ The example uses a simple Verilog design and a Python cocotb test to show how ou
 **Folder Structure
 print-vs-logging/
 
-├── adder.v        # Verilog design (Device Under Test)
+├── design.v        # Verilog design (Device Under Test)
 
-├── adder_tb.py    # cocotb testbench using print and logging
+├── tb-code.py    # cocotb testbench using print and logging
 
 └── Makefile       # Makefile to run cocotb simulation
 
@@ -26,7 +26,7 @@ cocotb connects to this module during simulation
 The module name is used as TOPLEVEL in the Makefile
 
 
-**tb.py
+**tb-code.py
 
 This is a Python-based cocotb testbench
 
@@ -71,13 +71,13 @@ Used in professional verification environments
 
 **Makefile
 
-Used to compile adder.v
+Used to compile design.v
 
 Starts the simulator (Icarus Verilog)
 
 Loads the top module
 
-Runs adder_tb.py using cocotb
+Runs tb-code.py using cocotb
 
 To run the example:
 
