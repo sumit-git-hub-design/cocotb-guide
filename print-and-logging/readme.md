@@ -48,7 +48,8 @@ Shows why logging is preferred in real projects
 
 
  **print vs logging (Concept)
-print()
+
+--print()
 
 Easy to use
 
@@ -58,7 +59,7 @@ No log levels or formatting
 
 Not recommended for large testbenches
 
-logging
+--logging
 
 Supports log levels (INFO, DEBUG, ERROR)
 
@@ -85,7 +86,8 @@ make
 
 
 **How to Run
-Requirements
+
+--Requirements
 
 Python 3
 
@@ -94,6 +96,7 @@ cocotb installed
 Icarus Verilog installed
 
 Run command
+
 make
 
 
@@ -109,4 +112,5 @@ Provide a minimal, easy-to-understand example
 **Key Takeaway
 
 Use print() for learning and quick checks
+
 Use logging for real cocotb projects
